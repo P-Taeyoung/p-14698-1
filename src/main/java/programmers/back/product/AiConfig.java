@@ -1,4 +1,4 @@
-package programmers.back.global.config;
+package programmers.back.product;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;

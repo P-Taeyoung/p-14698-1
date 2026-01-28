@@ -1,4 +1,4 @@
-package programmers.back.domain;
+package programmers.back.product.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,13 +36,13 @@ public class Product {
 		keyword.setProduct(this);
 	}
 
-	public void removeKeyword(ProductKeyword keyword) {
+	public void removeKeyword(programmers.back.product.domain.ProductKeyword keyword) {
 		keywords.remove(keyword);
 		keyword.setProduct(null);
 	}
 
 	public void addKeyword(String keywordText) {
-		ProductKeyword keyword = new ProductKeyword(keywordText);
+		programmers.back.product.domain.ProductKeyword keyword = new programmers.back.product.domain.ProductKeyword(keywordText);
 		addKeyword(keyword);
 	}
 }

@@ -1,4 +1,4 @@
-package programmers.back.domain;
+package programmers.back.product.domain;
 
 
 import jakarta.persistence.Column;
