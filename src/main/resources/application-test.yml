@@ -1,0 +1,18 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.ai.model.openai.autoconfigure.OpenAiAudioSpeechAutoConfiguration
+      - org.springframework.ai.model.openai.autoconfigure.OpenAiEmbeddingAutoConfiguration
+      - org.springframework.ai.model.openai.autoconfigure.OpenAiChatAutoConfiguration
+      - org.springframework.ai.model.openai.autoconfigure.OpenAiAudioTranscriptionAutoConfiguration
+      - org.springframework.ai.model.openai.autoconfigure.OpenAiImageAutoConfiguration
+      - org.springframework.ai.model.openai.autoconfigure.OpenAiModerationAutoConfiguration
+
+  ai:
+    ollama:
+      embedding:
+        options:
+          dimensions: 384 # 차원을 설정, 저차원인 경우 속도가 빠른 대신 정보 손실 가능성이 있음. 고차원일수록 정확한 유사도, 높은 표현력 하지만 공간차지가 크고 느림.
+          model: nomic-embed-text
+      chat:
+        model: llama3.1
